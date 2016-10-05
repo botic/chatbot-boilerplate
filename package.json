@@ -1,0 +1,21 @@
+{
+    "name": "chatbot-boilerplate",
+    "version": "1.0.0",
+    "description": "A simple boilerplate to develop chatbots with RingoJS.",
+    "keywords": [
+        "messenger", "telegram", "bots", "app engine"
+    ],
+    "author": {
+        "name":  "Philipp Naderer",
+        "email": "philipp.naderer@gmail.com"
+    },
+    "dependencies": {
+        "httpserver": ">=0.0.1",
+        "stick": ">=0.4.0",
+        "fbmessenger": ">=2.0.0"
+    },
+    "engines": {
+        "ringojs": ">=1.0.0"
+    },
+    "main": "./main.js"
+}
