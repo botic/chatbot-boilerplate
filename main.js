@@ -6,7 +6,7 @@ const log = logging.getLogger(module.id);
 
 // the HTTP server itself
 const httpServer = require("httpserver");
-var server = null;
+let server = null;
 
 const stop = exports.stop = function() {
     if (server !== null) {
@@ -40,8 +40,7 @@ const start = exports.start = function() {
 
     server.start();
 
-    /*
-    // initialize Facebook bot texts
+    /* optional: initialize Facebook bot texts:
     log.info("Setting thread get started button and greeting text ...");
 
     const fbmbot = new FBMessenger(config.messenger.pageToken);
@@ -66,6 +65,7 @@ const start = exports.start = function() {
     ]);*/
 };
 
+// only call start if called via the command line as main script
 if (require.main === module) {
     start();
 }

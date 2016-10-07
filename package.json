@@ -10,7 +10,6 @@
         "email": "philipp.naderer@gmail.com"
     },
     "dependencies": {
-        "httpserver": ">=0.0.1",
         "stick": ">=0.4.0",
         "fbmessenger": ">=2.0.0"
     },
